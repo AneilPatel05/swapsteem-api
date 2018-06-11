@@ -1,0 +1,34 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "mongodb": "mongodb://aneil:anngty05@ds023475.mlab.com:23475/swapsteem",
+  "authentication": {
+    "secret": "a8559e12564334fa8ef7ba40e43c81df9b7efe97d6e98a1f260c94059e01228244e93d58ec783f8e28e30ddc0090f112a2121645108349b3e8c717b04901144d08a5317eca26c3872d14bea44d63fd5a8887aa9465ad0a6cbd9569dc6d24a389e46ab44485152bf3bcd186635ecded8ee2538c1285dcdd0d4e0cb51ba02094c2fafa76c9ceaa67c69d1d1b9a72026a9b3114648b53905bb9944973e67a77265f64bbb26a10f771905c53c6368f48bbf9fd5156d08cfa53af4e51f61103253ca76b23e5bd78937fef550b8260065b05d74c18aca9d5c959b110ff1dc5972bc92b981e0f2612a59eb32142742f0af919be6e702a2d37adeb554b1f76799eab1f45",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://localhost:3030",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  }
+}
