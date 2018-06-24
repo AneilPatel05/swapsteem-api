@@ -8,7 +8,11 @@ module.exports = function (app) {
   
     email: {type: String, unique: true},
     password: { type: String },
-  
+    steem_username :{type: String, unique:true},
+    reputation : {type:Number},
+    trade_limit : {type:Number},
+    isEscrowAgent : {type: Boolean},
+    isTrader : {type:Boolean}
   
   }, {
     timestamps: true

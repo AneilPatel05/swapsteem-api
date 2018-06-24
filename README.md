@@ -1,6 +1,5 @@
 # swapsteem-api
-
-> 
+SwapSteem is a peer to peer exchange for Steem and SBD. This is the Back end API of Swapsteem. the front end of Swapsteem is in early Alpha and will be open sourced soon.
 
 ## About
 
@@ -43,6 +42,13 @@ $ feathers help                           # Show all commands
 ## Help
 
 For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
+
+## Roadmap
+- Add Email and phone number verification
+- Add Registration for trader account
+- Add Escrow Feature
+- Add Reputation and review system
+- Add multiple fiat currencies
 
 ## Changelog
 
