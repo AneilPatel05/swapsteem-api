@@ -10,7 +10,7 @@ module.exports = function (app) {
     msgType: {type: String, required: true},
     msgFrom: {type: String, required: true},
     msgTo: {type: String, required: true},
-    msgText: {type: Text, required: true},
+    msgText: {type: String, required: true},
   }, {
     timestamps: true
   });
